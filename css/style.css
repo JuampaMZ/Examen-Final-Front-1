@@ -1,0 +1,265 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --rojo-brillante: rgb(242, 95, 58);
+    --azul-oscuro: rgb(35, 44, 81);
+    --azul-grisaceo-oscuro: rgb(143, 148, 167);
+    --azul-muy-oscuro: rgb(29, 30, 37);
+    --rojo-muy-palido: rgb(255, 239, 234);
+    --variante-gris-claro: rgb(249, 249, 249);
+}
+
+/* #img-absolute-body {
+    position:absolute;
+    top:-150px;
+    right:-150px;
+    z-index: -1;
+    width: 500px;
+} */
+
+.big-button {
+    background-color: var(--rojo-brillante);
+    border: 0;
+    border-radius: 50px;
+    color: var(--variante-gris-claro);
+    height: 45px;
+    width: 135px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.small-button {
+    background-color: var(--rojo-brillante);
+    border: 0;
+    border-radius: 50px;
+    color: var(--variante-gris-claro);
+    height: 45px;
+    width: 70px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.small-button:hover, .big-button:hover {
+    background-color: var(--rojo-muy-palido);
+    color: var(--azul-grisaceo-oscuro);
+    cursor: pointer;
+}
+
+a {
+    color:var(--azul-oscuro);
+    text-decoration:none;
+}
+
+a:hover {
+    color:var(--azul-grisaceo-oscuro);
+}
+
+
+/* header */
+
+#nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.hidden-mobile, .hidden-mobile-tablet {
+    display: none;
+}
+
+
+/* main */
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px 100px 10px;
+}
+
+#home-img {
+    width: 370px;
+}
+
+#home-img img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+}
+
+#home-phrase {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-phrase h1 {
+    font-size: 42px;
+    color:rgb(35, 44, 81);
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0px 0px 0px;
+}
+
+#home-phrase p {
+    font-size: 19.2px;
+    font-weight: 500;
+    text-align: center;
+    margin:10px 0px 30px;
+    line-height: 2rem;
+    color:rgb(143, 148, 167)
+}
+
+#about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 10px 100px 10px;
+}
+
+#about-us-difference {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-us-difference h2 {
+    font-size: 35px;
+    color:rgb(35, 44, 81);
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0px 0px 0px;
+}
+
+#about-us-difference p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin:10px 0px 30px;
+    line-height: 30px;
+    color:rgb(143, 148, 167);
+}
+
+#about-us-points {
+    width: 370px;
+}
+
+.about-us-button-h3{
+    display: flex;
+    align-items: center;
+    background-color: var(--rojo-muy-palido);
+    border-radius: 50px 0px 0px 50px;
+    justify-content: start;
+}
+
+.about-us-button-h3 h3 {
+    font-size: 16px;
+    color:rgb(35, 44, 81);
+    text-align: center;
+    font-weight: 700;
+}
+
+#about-us-points p {
+    font-size: 16px;
+    font-weight: 500;
+    margin:10px 0px 30px;
+    line-height: 25px;
+    color:rgb(143, 148, 167);
+}
+
+/* footer */
+
+/* media querys */
+ @media (min-width: 480px) {
+    
+}
+
+@media (min-width: 768px) {
+
+    /* section home */
+
+    .hidden-tablet-desktop {
+        display: none;
+    }
+
+    .nav-header-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-header-list li{
+        list-style-type: none;
+        padding: 1vw;
+    }
+
+    #home {
+        flex-direction: row-reverse;
+    }
+
+    #home-img {
+        width: 500px;
+    }
+    
+    #home-phrase {
+        align-items: flex-start;
+    }
+    
+    #home-phrase h1 {
+        text-align: left;
+    }
+    
+    #home-phrase p {
+        font-size: 0.9rem;
+        text-align: left;
+        line-height: 1.7rem;
+        margin:30px 50px 30px 0px;
+    }
+    
+    /* section about us */
+
+    
+    #about-us-difference h2 {
+
+        text-align: left;
+    }
+    
+    #about-us-difference p {
+        text-align: left;
+    }
+    
+    #about-us-points {
+        width: 500px;
+    }
+    
+    .about-us-button-h3{
+        background-color: transparent;
+    }
+    
+    
+
+
+    /* section community */
+
+}
+
+@media (min-width: 1279px) {
+    .hidden-mobile-tablet{
+        display: inline-block;
+    }
+
+    #nav-header { 
+        justify-content: space-around;
+    }
+
+
+}
+
+/* animations */
