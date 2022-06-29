@@ -45,7 +45,7 @@
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
-.small-button:hover, .big-button:hover {
+.small-button:hover, .big-button:hover, .big-button-simplify:hover {
     background-color: var(--rojo-muy-palido);
     color: var(--azul-grisaceo-oscuro);
     cursor: pointer;
@@ -82,7 +82,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 10px 10px 100px 10px;
+    margin: 15px 15px 100px 15px;
 }
 
 #home-img {
@@ -103,40 +103,40 @@ a:hover {
 
 #home-phrase h1 {
     font-size: 42px;
-    color:rgb(35, 44, 81);
+    color:var(--azul-oscuro);
     text-align: center;
     font-weight: 700;
     margin: 10px 0px 0px 0px;
 }
 
 #home-phrase p {
-    font-size: 19.2px;
+    font-size: 18px;
     font-weight: 500;
     text-align: center;
     margin:10px 0px 30px;
-    line-height: 2rem;
-    color:rgb(143, 148, 167)
+    line-height: 32px;
+    color: var(--azul-grisaceo-oscuro)
 }
 
 #about-us {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 10px 10px 100px 10px;
+    margin: 15px 15px 50px 15px;
 }
 
 #about-us-difference {
     width: 370px;
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 20px 0px;
 }
 
 #about-us-difference h2 {
     font-size: 35px;
-    color:rgb(35, 44, 81);
+    color:var(--azul-oscuro);
     text-align: center;
     font-weight: 700;
-    margin: 10px 0px 0px 0px;
 }
 
 #about-us-difference p {
@@ -145,7 +145,7 @@ a:hover {
     text-align: center;
     margin:10px 0px 30px;
     line-height: 30px;
-    color:rgb(143, 148, 167);
+    color: var(--azul-grisaceo-oscuro);
 }
 
 #about-us-points {
@@ -157,14 +157,15 @@ a:hover {
     align-items: center;
     background-color: var(--rojo-muy-palido);
     border-radius: 50px 0px 0px 50px;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .about-us-button-h3 h3 {
     font-size: 16px;
-    color:rgb(35, 44, 81);
+    color: var(--azul-oscuro);
     text-align: center;
     font-weight: 700;
+    margin-left: 18px;
 }
 
 #about-us-points p {
@@ -172,15 +173,171 @@ a:hover {
     font-weight: 500;
     margin:10px 0px 30px;
     line-height: 25px;
-    color:rgb(143, 148, 167);
+    color: var(--azul-grisaceo-oscuro);
 }
+
+#community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#community h2{
+    text-align: center;
+    font-size: 35px;
+    color: var(--azul-oscuro);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 120px;
+}
+
+.community-testimonials-ali {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--variante-gris-claro);
+    width: 350px;
+    position: relative;
+}
+
+.community-testimonials-ali img {
+    width: 100px;
+    position: absolute;
+    top: -50px;
+}
+
+.community-testimonials-ali h3 {
+    font-size: 16px;
+    color: var(--azul-oscuro);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.community-testimonials-ali p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(--azul-grisaceo-oscuro);
+    text-align: center;
+    margin: 24px;
+}
+
+.community-buttons {
+    margin: 25px 0px 50px;
+}
+
+.community-button {
+    background-color: transparent;
+    border: 1px solid var(--rojo-brillante);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.community-button-active{
+    background-color: var(--rojo-brillante);
+}
+
+#simplify {
+    background-color: var(--rojo-brillante);
+    width: 100%;
+    margin-top: 40px;
+    height: 300px;
+}
+
+.simplify-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 40px;
+    background-color: var(--rojo-brillante);
+}
+
+.big-button-simplify {
+    background-color: var(--variante-gris-claro);
+    border: 0;
+    border-radius: 50px;
+    color: var(--rojo-brillante);
+    height: 45px;
+    width: 135px;
+    font-weight: 500;
+}
+
+.simplify-div-h2 {
+    width: 300px;
+}
+
+.simplify-div h2 {
+    font-size: 35px;
+    color: var(--variante-gris-claro);
+    text-align: center;
+    font-weight: 700;
+}
+
 
 /* footer */
+footer{
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: center;
+}
+
+#all-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    justify-content: space-evenly;
+}
+
+#div-footer-form {
+    width: 100%;
+}
+
+#div-footer-form form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#div-navs-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#div-social-networks{
+    width: 100%;
+}
+
+.nav-social-networks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-social-networks img{
+    width: 25px;
+    /* filter: opacity(1) drop-shadow(10px 10px 0 red); */ 
+}
+
+/* .nav-social-networks img {
+    margin: 17px;
+    width: 25px;
+}
+ */
+.nav-footer-1 ul li, .nav-footer-2 ul li{
+    list-style-type: none;
+}
+
+.nav-footer-1 ul li a, .nav-footer-2 ul li a{
+    color: var(--variante-gris-claro);
+}
+
 
 /* media querys */
- @media (min-width: 480px) {
-    
-}
 
 @media (min-width: 768px) {
 
@@ -217,22 +374,28 @@ a:hover {
     }
     
     #home-phrase p {
-        font-size: 0.9rem;
+        font-size: 15px;
         text-align: left;
-        line-height: 1.7rem;
+        line-height: 28.3px;
         margin:30px 50px 30px 0px;
     }
     
     /* section about us */
+    #about-us {
+        margin-bottom: 100px;
+    }
 
+    #about-us-difference {
+        width: 400px
+    }
     
     #about-us-difference h2 {
-
         text-align: left;
     }
     
     #about-us-difference p {
         text-align: left;
+        margin:30px 50px 30px 0px;
     }
     
     #about-us-points {
@@ -243,10 +406,24 @@ a:hover {
         background-color: transparent;
     }
     
-    
-
+    #about-us-points p{
+        margin-left: 88px;
+    }
 
     /* section community */
+
+    .simplify-div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .simplify-div-h2 {
+        width: 400px;
+    }
+    
+    .simplify-div h2 {
+        text-align: left;
+    }
 
 }
 
@@ -258,7 +435,6 @@ a:hover {
     #nav-header { 
         justify-content: space-around;
     }
-
 
 }
 
