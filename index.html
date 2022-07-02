@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="icon" href="img/logo-abbreviated.png">
+    <title>Manage</title>
 </head>
 <body>
-    <!-- <img id="img-absolute-body" src="img/bg-tablet-pattern.svg" alt=""> -->
+    <!-- ********************************************************* -->
     <header>
         <nav id="nav-header">
-            <a href=""><img class src="img/logo.svg" alt="logo"></a>
+            <div id="div-logo-header">
+                <a href="#"><img class src="img/logo.svg" alt="logo"></a>
+            </div>
             <div class="hidden-tablet-desktop">
-                <a href=""><img src="img/icon-hamburger.svg" alt="nav-icon"></a>
+                <a href="#"><img src="img/icon-hamburger.svg" alt="nav-icon"></a>
             </div>
             <ul class="nav-header-list hidden-mobile">
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Community</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
             </ul>
-            <button class="big-button hidden-mobile-tablet">Get Started</button>
+            <div class="hidden-mobile-tablet">
+                <button class="big-button">Get Started</button>
+            </div>
         </nav>
     </header>
+    <!-- ********************************************************* -->
     <main>
         <section id="home">
             <div id="home-img" >
@@ -36,13 +42,12 @@
                 <button class="big-button">Get Started</button>
             </article>
         </section>
-
         <section id="about-us">
             <article id="about-us-difference">
                 <h2>What's different about Manage? </h2>
                 <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
             </article>
-            <article id="about-us-points">
+            <div id="about-us-points">
                 <div class="about-us-button-h3">
                     <button class="small-button">01</button>
                     <h3>Track company-wide progress</h3>
@@ -58,35 +63,34 @@
                     <h3>Everything you need in one place</h3>
                 </div>
                 <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
-            </article>
+            </div>
         </section>
-
         <section id="community">
             <h2>What they've said</h2>
             <div id="community-testimonials">
                 <div class="community-testimonials-anisha hidden-mobile ">
-                    <img src="img/avatar-anisha.png" alt="">
+                    <img src="img/avatar-anisha.png" alt="anisha">
                     <h3>Anisha Li</h3>
                     <p>“Manage has supercharged our team's workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                 </div>
                 <div class="community-testimonials-ali">
-                    <img src="img/avatar-ali.png" alt="">
+                    <img src="img/avatar-ali.png" alt="ali">
                     <h3>Ali Bravo</h3>
                     <p>“We have been able to cancel so many other subscriptions since using manage. There ir no more cross-channel confusion and everyone is much more focused.”</p>
                 </div>
                 <div class="community-testimonials-richard hidden-mobile">
-                    <img src="img/avatar-richard.png" alt="">
+                    <img src="img/avatar-richard.png" alt="richard">
                     <h3>Richard Watts</h3>
                     <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can't stop recommending them to everyone i talk to!”</p>
                 </div>
             </div>
-            <div class="hidden-tablet-desktop community-buttons">
+            <div class="hidden-desktop community-buttons">
                 <button class="community-button"> </button>
                 <button class="community-button community-button-active"> </button>
                 <button class="community-button"> </button>
                 <button class="community-button"> </button>
             </div>
-            <button class="big-button">Get Started</button>
+            <button class="big-button community-button-get">Get Started</button>
         </section>
         <section id="simplify">
             <div class="simplify-div">
@@ -99,48 +103,53 @@
             </div>
         </section>
     </main>
-
+    <!-- ********************************************************* -->
     <footer>
         <div id="all-footer">
-            <div id="div-footer-form">
-                <form action="" method="">
-                    <input type="text">
-                    <button class="small-button">Go</button>
-                </form>
-            </div>
-            <div id="div-navs-footer">
-                <nav class="nav-footer-1">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">About Us</a></li>
-                    </ul>
-                </nav>
-                <nav class="nav-footer-2">
-                    <ul>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Community</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="div-social-networks">
-                <nav class="nav-social-networks">
-                    <img src="img/icon-facebook.svg" alt="">
-                    <img src="img/icon-youtube.svg" alt="">
-                    <img src="img/icon-twitter.svg" alt="">
-                    <img src="img/icon-pinterest.svg" alt="">
-                    <img src="img/icon-instagram.svg" alt="">
-                </nav>
-            </div>
-            <div>
-                <img src="img/logo-footer.png" alt="logo-footer">
+            <div id="all-footer-less-copyright">
+                <div id="div-footer-form">
+                    <form action="" method="">
+                        <input type="email" name="email" placeholder="Updates in your inbox...">
+                        <button type="submit" class="small-button small-button-go">Go</button>
+                    </form>
+                </div>
+                <div id="div-navs-footer">
+                    <nav class="nav-footer-home">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav-footer-home">
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="div-social-networks-plus-logo-footer">
+                    <div id="div-social-networks">
+                        <nav class="nav-social-networks">
+                            <a href="https://www.facebook.com/" target="_blank"><img class="fb" src="img/icon-facebook.svg" alt="icon-facebook"></a>
+                            <a href="https://www.youtube.com/" target="_blank"><img class="yt" src="img/icon-youtube.svg" alt="icon-youtube"></a>
+                            <a href="https://twitter.com/" target="_blank"><img class="tw" src="img/icon-twitter.svg" alt="icon-twitter"></a>
+                            <a href="https://www.pinterest.es/" target="_blank"><img class="pi" src="img/icon-pinterest.svg" alt="icon-pinterest"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img class="ig" src="img/icon-instagram.svg" alt="icon-instagram"></a>
+                        </nav>
+                    </div>
+                    <div id="div-logo-footer">
+                        <a href="#"><img src="img/logo-footer.png" alt="logo-footer"></a>
+                    </div>
+                </div>
             </div>
             <div id="div-copyright">
-                <p>Copyright 2020. All Rights Reserved</p>
+                <span>Copyright 2020. All Rights Reserved</span>
             </div>
         </div>
     </footer>
+    <!-- ********************************************************* -->
 </body>
 </html>
